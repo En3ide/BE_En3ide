@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <row>
+    <name>Alex</name>
+    <age>25</age>
+    <address>Paris</address>
+  </row>
+  <row>
+    <name>Emily</name>
+    <age>18</age>
+    <address>Toulouse</address>
+  </row>
+  <row>
+    <name>Thomas</name>
+    <age>22</age>
+    <address>Lile</address>
+  </row>
+</root>

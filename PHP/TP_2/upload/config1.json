@@ -1,0 +1,70 @@
+{
+	"nodes":[
+	{
+		"id": 0,
+		"type": "Router",
+		"hostname": "RouterA",
+		"interfaces": [
+			{
+				"id": 0,
+				"name": "lo0",
+				"type": "ethernet",
+				"addresses": [
+					{
+						"address": "127.0.0.1",
+						"mask": 8,
+						"proto": "static",
+						"family": "ipv4"
+					}
+				]
+			},
+			{
+				"id": 1,
+				"name": "eth0",
+				"type": "ethernet",
+				"addresses": [
+					{
+						"address": "192.168.1.1",
+						"mask": 24,
+						"proto": "static",
+						"family": "ipv4"
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": 1,
+		"type": "Server",
+		"hostname": "Moodle",
+		"interfaces": [
+			{
+				"id": 0,
+				"name": "lo0",
+				"type": "ethernet",
+				"addresses": [
+					{
+						"address": "127.0.0.1",
+						"mask": 8,
+						"proto": "static",
+						"family": "ipv4"
+					}
+				]
+			},
+			{
+				"id":1,
+				"name": "eth0",
+				"type": "ethernet",
+				"addresses": [
+					{
+						"address": "192.168.0.17",
+						"mask": 24,
+						"proto": "dhcp",
+						"family": "ipv4"
+					}
+				]
+			}
+		]
+	}
+	]
+}

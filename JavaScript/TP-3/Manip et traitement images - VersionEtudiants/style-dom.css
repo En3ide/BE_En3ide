@@ -1,0 +1,199 @@
+body {
+    font-family: sans-serif; 
+}
+
+h1 {
+   font-size:24px;
+   color : navy;
+   font-weight : bold;
+   background-color : rgb(128,128,255);
+   padding : 3px;
+}
+
+.niv2 {
+   font-size:18px;
+   text-align:left;
+   color : blue;
+   width:90%;
+   margin:5px;
+}
+
+p {
+   background-color:#EEEEEE;
+   font-size: 12px;
+   margin: 0 15px;
+   padding : 20px;
+   width:80%;
+   color : black;
+   border : thin solid #BBBBBB;
+   margin : 1px;
+}
+
+p.format1 {
+    background-color:#CCCCCC;
+}
+
+.italique {
+    font-size:16px;
+    font-style:italic;
+}
+
+code {
+    color : blue;
+}
+.nodeName, .nodeType, .nodeValue {
+    padding : 0px 5px;
+    margin : 0px 5px;
+}
+.nodeType {
+    background-color : rgba(228,128,0,1);
+}
+.nodeValue {
+    background-color : rgba(128,228,0,1);
+}
+.nodeName {
+    background-color : rgba(0,228,128,1);
+}
+
+a {
+    color: #444444;
+    text-decoration : none;
+}
+
+a:hover {
+    background-color : white;
+    color : rgb( 255,0,0);
+    font-weight : bold;
+    border: thin none;
+    border-style : dashed none;
+} 
+
+i {
+    text-decoration  : underline;
+ }
+
+#buttons{
+    margin:10px;
+    text-align:center;
+    padding : 2px;
+}
+
+.button {
+    margin:10px;
+    border-radius : 4px;
+    background-color : #888888;
+    color: white;
+    font-weight:bold;
+    padding:5px;
+}
+.button:hover {
+	background-color:#444444;
+}
+
+.encadre {
+     border: thin ;
+     border-style : solid;
+}
+
+.rouge {
+    color : red;
+}
+
+.consigne{
+    margin : auto;
+    margin-bottom:15px;
+    width : 80%;
+    padding: 5px;
+    color: #222222;    
+    background-color:rgb(255,255,128);
+    border : 1px solid green;
+    border-radius : 3px;
+    font-size:10px;
+}
+
+img {
+    width : 22%;
+    padding :3px;  
+    margin : 10px;
+}
+
+#images {
+    margin : auto;
+    /*width : 30%;*/
+    float : left;    
+}
+
+#selected {
+    box-shadow : 0px 0px 4px 4px rgba(255,0,0,0.5);
+}
+
+#traitImg{
+   background-color: #0000FF;
+}
+
+#traitementImg{
+   float : right;
+   background-color : rgb(128,128,255);
+   /*width : 50%;*/
+}
+.openTraitement{
+   width : 60%;
+   visibility: display;
+}
+
+.closeTraitement{
+   width : 10%;
+   visibility: hidden;
+}
+
+.openimages{
+   width : 90%;
+}
+
+.closeimages{
+   width : 40%;
+}
+
+#menu{
+    background-color : rgb(128,128,255);	
+	margin-top : 10px;
+	padding : 10px;
+	margin-bottom : 10px;
+	text-align : center;
+	font-family : cursive;  
+}
+
+#menu li{
+  list-style-type : none;
+  display : inline-block;
+  margin-top : 10px;
+  height : 20px; 
+    
+}
+input[type="button"]
+{
+    font-size:16px;
+	font-family : cursive;
+	font-weight : bold;
+}
+
+h1{
+  text-align : center;
+  background : #d0f9eb;
+}
+
+#contenu{
+   margin : auto;
+   width : 90%;
+   background : green;
+   text-align : center;
+   background-color : rgb(110,110,255);
+   margin : 2% auto;
+   padding : 2%;
+}
+
+#select_File{
+	margin : 10px;
+	font-family : cursive;
+	 background-color : rgb(130,110,255);
+}

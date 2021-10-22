@@ -1,0 +1,83 @@
+/*Commun*/
+body {
+    font-family: "Trebuchet MS", sans-serif;
+    font: #ffffff;
+    margin: 0% 0% 0% 0%;
+    background-color: rgb(255, 255, 255);
+}
+
+/*------Formulaire-------*/
+#form {
+    /* Dimension */
+    margin: auto;
+    margin-top: +20px;
+    width: 900px;
+    /* décoration du formulaire */
+    background: #b7ceff;
+    border-color: #5c8df7;
+    border-style: solid;
+    border-radius: 14px;
+    /* écriture dans le formulaire */
+    font-family: arial;
+    font-size: 15px;
+    padding-top: 20px;
+    padding-left: 0px;
+    text-align: center;
+}
+#form-1, #form-2 {
+    /* Dimension */
+    margin: auto;
+    width: 400px;
+    height: 165px;
+    /* décoration du formulaire */
+    background: #ffffff;
+    border-color: #314a80;
+    border-style: solid;
+    border-radius: 14px;
+    /* écriture dans le formulaire */
+    font-family: arial;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-left: 0px;
+    text-align: center;
+    color: #314a80;
+}
+#form-3 {
+    /* Dimension */
+    margin: auto;
+    margin-top: +20px;
+    width: 850px;
+    height: 165px;
+    /* décoration du formulaire */
+    background: #ffffff;
+    border-color: #314a80;
+    border-style: solid;
+    border-radius: 14px;
+    /* écriture dans le formulaire */
+    font-family: arial;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-left: 0px;
+    text-align: center;
+    color: #314a80;
+}
+/*-------Input-------*/
+#form-1 select,
+#form-2 select,
+#form-3 select {
+    margin: 0px:
+}
+/*-------partie_1-------*/
+#df-1 {
+    display: flex;
+    margin: auto;
+}
+#vr, #vr-2 {
+    text-align: left;
+}
+#vr label {
+    position: absolute;
+}
+#vr input {
+    margin-left: 110px;
+}

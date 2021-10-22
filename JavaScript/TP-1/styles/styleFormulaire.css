@@ -1,0 +1,177 @@
+/*Commun*/
+body {
+    font-family: "Trebuchet MS", sans-serif;
+    font: #ffffff;
+    margin: 0% 0% 0% 0%;
+    background-color: rgb(255, 255, 255);
+}
+div {
+    display: block;
+}
+h1 {
+    font-size: 25px;
+    color: white;
+    display: inline-block;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+p {
+    color: black;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+}
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+/*---Bouton---*/
+.bouton{
+    /* création du bouton */
+    display: block;
+    width: 100px;
+    height: 35px;
+    /* décoration du bouton */
+    background: gray;
+    border-color: #5c8df7;
+    border-style: solid;
+    border-radius: 14px;
+    /* écriture dans le bouton */
+    text-align:center;
+    font-family: arial;
+    font-size: 15px;
+    padding-top: 20px;
+    /* positionnement du bouton dans la page */
+    margin-top: 0px;
+    margin-left: 0%;
+}
+/* Header-Haut_page */
+#haut_page {
+    background-color: #435a74;
+    background: url(../images/img_header.PNG) no-repeat;
+    background-position: center;
+    margin: auto;
+    width: 100%;
+    height: 200px;
+}
+#header {
+    margin-left: 7.5%;
+}
+/* Nav */
+nav {
+    background-color: #001883;
+    margin: auto;
+    width: 900px;
+    height: 60px;
+}
+#nav a{
+    margin: auto;
+}
+/*------Formulaire-------*/
+#form {
+    /* Dimension */
+    margin: auto;
+    width: 900px;
+    /* décoration du formulaire */
+    background: #b7ceff;
+    border-color: #5c8df7;
+    border-style: solid;
+    border-radius: 14px;
+    /* écriture dans le formulaire */
+    font-family: arial;
+    font-size: 15px;
+    padding-top: 20px;
+    padding-left: 0px;
+    text-align: center;
+}
+#niveau il{
+    display: flex;
+}
+/* Civilité */
+#form #civilité * {
+    display: inline-block;
+}
+#form #civilité {
+    margin-left: 20px;
+    text-align: left;
+}
+#title_2 {
+    margin-left: 40px;
+}
+#pt {
+    position: absolute;
+}
+#button-ef {
+    display: grid;
+    margin-left: 50%;
+    margin-bottom: 15px;
+}
+#from-bottom {
+    margin-left: 15px;
+    display: flex;
+    text-align: end;
+}
+/* Register */
+#form #register * ,#mail * ,#textarea * {
+    display: inline-block;
+}
+#form #register ,#mail ,#textarea {
+    margin-left: 20px;
+    text-align: left;
+}
+#form #register label,#mail label ,#textarea label{
+    position: absolute;
+    margin-left: 0px;
+}
+#form #register input ,#message ,#form #mail input{
+    border: #505050;
+    border-radius: 7.5px;
+    margin-left: 140px;
+    margin-right: 90px;
+    margin-bottom: 7.5px;
+}
+/* Select */
+#form #select *{
+    display: inline-block;
+}
+#form #select {
+    margin-left: 20px;
+    text-align: left;
+}
+#form #select label {
+    position: absolute;
+    margin-left: 0px;
+}
+#form #select #nature {
+    border: #505050;
+    border-radius: 7.5px;
+    margin-left: 140PX;
+    margin-bottom: 7.5px;
+}
+/* Fin-Page */
+#barre *{
+    color: white;
+}
+#gauche {
+    position: absolute;
+    text-align: left;
+}
+#contact {
+    position: absolute;
+    margin-left: 25%;
+    text-align: left;
+}
+#droite {
+    text-align: right;
+}
+footer {
+    position: absolute;
+    text-align: right;
+    background: #001883;
+    margin: auto;
+    width: 100%;
+    height: 150px;
+}

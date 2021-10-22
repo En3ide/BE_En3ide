@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <link rel="stylesheet" href="../styles/styleFormulaire.css">
+		<title>contact</title>
+	</head>
+	<body>
+        <div id="bloc_pages">
+            <!--Debut_page--->
+            <header id="haut_page">
+            </header>
+            <!--Nav--->
+            <div id="contenu">
+                <nav>
+                    <div id="nav">
+                        <a href="../pages/index.html" class="bouton">Catalogue</a>
+                    </div>
+                </nav>
+                <!---Formulaire--->
+                <div id="form">
+                  <form action="contact.html" method="post" class="formContact">
+                    <h1 id="identité">Votre identité</h1>
+
+                    <div id="civilité">
+                      <p>civilité </p>
+                      <ul>
+                        <li><label for="title_1">M.<input type="radio" name="CivilitePers" value="M." value="huey"checked></li>
+                        <li><label id="title_2" for="title_2">Mme.<input type="radio" name="CivilitePers" value="Mme."></label></li>
+                      </ul>
+                    </div>
+
+                    <div id="register">
+                      <label for="nom"><span>*Nom :</span></label><input type="text" placeholder=" Nom" id="nom" name="NomPers">
+                      <label for="date_naissance"><span>Date de Naissance :</span></label><input pattern="(0[1-9]|[12][0-9]|3[01])[\/](0[1-9]|1[012])[\/](19|20)\d\d" placeholder="jj/mm/aaaa" type="text" id="pwd" name="DateNaisPers"></br>
+                      <label for="prenom"><span>*Prenom :</span></label><input type="text" placeholder=" Prenom" id="mail" name="PrenomPers"></br>
+                      <label for="rue"><span>Rue :</span></label><input type="text" placeholder=" Rue" id="rue" name="RuePers"></br>
+                      <label for="code_postal"><span>Code postal :</span></label><input pattern="{5}"placeholder=" 59000" placeholder="####" type="text" id="pwd" name="CPPers">
+                      <label for="Ville"><span>Ville :</span></label><input name="VillePers" id="ville" placeholder="Ville">
+                    </div>
+
+                    <div id="mail"></br>
+                        <label for="email"><span>*Email :</span></label><input type="email" placeholder=" Email" id="name" name="EmailPerso">
+                          <label>Niveaux d'étude :</label>
+                          <div id="pt">
+                            <ul id="niveau" name="NatMsgInfo">
+                              <il><input type="checkbox" name="Ecole">Ecole</il>
+                              <il><input type="checkbox" name="Collège">Collège</il>
+                              <il><input type="checkbox" name="Lycée">Lycée</il>
+                              <il><input type="checkbox" name="Supérieur">Supérieur</il>
+                            </ul>
+                          </div></br>
+                          <label for="telephone"><span>Téléphone :</span></label><input type="tel" placeholder=" 11 22 33 44 55" id="mail" name="TelPers">
+                    </div></br></br>
+
+                    <div id="select">
+                      <label for="nature"><span>Nature du message :</span></label>
+                      <select id="nature">
+                          <option>Commande
+                          <option>Service après vente
+                          <option>Demande d’information
+                          <option>Autre
+                      </select></br>
+                    </div>
+                    
+                    <div id="textarea">
+                      <label id="label_message" for="message"><span>*Message :</span></label><textarea id="message" name="MsgInfo" rows="2" cols="100" placeholder="Message"></textarea>
+                    </div>
+
+                    <div id="from-bottom">
+                      <p>Les champs indiqués par une * sont obligatoires</p>
+                      <div id="button-ef">
+                        <input type="button" value="Soumettre">
+                        <input type="button" value="Effacer">
+                      </div>
+                    </div>
+                  </form>
+                </div>
+            </div>
+            <!--Fin_Contenu--->
+            <!--Contact_des_établissement-->
+            <footer>
+                <div id="footer">
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

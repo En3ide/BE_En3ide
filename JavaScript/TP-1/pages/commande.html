@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <link rel="stylesheet" href="../styles/tamplate.css">
+        <link rel="stylesheet" href="../styles/formulaire2.css">
+        <script src="../scripts/fonction.js"></script>
+        <title>Commande</title>
+        <!---https://jsfiddle.net/1p9tkhzb/-->>
+	</head>
+	<body>
+        <div id="bloc_pages">
+            <!--Debut_page--->
+            <header id="haut_page">
+            </header>
+            <!--Nav--->
+            <div id="contenu">
+                <nav>
+                    <div id="nav">
+                        <ul>
+                            <il><a href="https://andre-malraux-bethune.enthdf.fr/">Catalogue</a></il>
+                        </ul>
+                    </div>
+                </nav>
+                <!---Formulaire--->
+                <div id="form">
+                  <div id="df-1">
+                    <form id="form-1">
+                        <h2>Votre identité</h2>
+                        <section id="vr">
+                            <label for="nom"><span>Nom :</span></label><input type="text" placeholder=" Nom" id="nom" name="NomPers"></br>
+                            <label for="prenom"><span>Prenom :</span></label><input type="text" placeholder=" Prenom" id="prenon" name="PrenomPers"></br>
+                            <label for="email"><span>Email :</span></label><input type="email" placeholder=" Email" id="mail" name="EmailPerso"></br>
+                            <label for="prenom"><span>Mot de passe :</span></label><input type="text" placeholder=" Mot de passe" id="mdp" name="PrenomPers"></br>
+                        </section>
+                    </form>
+                    <form id="form-2">
+                        <h2>Votre reservation</h2>
+                        <section id="vr-2">
+                            <label>choisir un produit </label><select id="liste_Calculette" onchange="selectCalculette(this)">
+                                <option value="79"> Casio Graph 35  </option>
+                                <option value="58"> TI82  </option>
+                                <option value="84"> TI83  </option>
+                            </select></br>
+                            <p> Prix unitaire: <span id="prix"> 0 </span> Euros</p>
+                            <label>quantité </label><select id="liste_Quantite" onchange="selectQuantite(this)">
+                                <option value="1"> 1  </option>
+                                <option value="2"> 2  </option>
+                                <option value="3"> 3  </option>
+                                <option value="4"> 4  </option>
+                                <option value="5"> 5  </option>
+                                <option value="6"> 6  </option>
+                                <option value="7"> 7  </option>
+                                <option value="8"> 8  </option>
+                                <option value="9"> 9  </option>
+                                <option value="10"> 10  </option>
+                            </select>
+                            <p> Prix total : <span id="prix_total"> 0 </span> Euros</p>
+                        </section>
+                    </form>
+                  </div>
+                  <div id="df-2">
+                      <form id="form-3">
+                        <h2>Votre mode de paiement</h2>
+                        <label>quantité </label><select id="liste_Quantite" onchange="selectQuantite(this)">
+                            <option value="1"> Carte bleu  </option>
+                            <option value="2"> Paypal  </option>
+                            <option value="3"> Chèque  </option>
+                        </select>
+                      </form>
+                  </div>
+                </div>
+            </div>
+            <!--Fin_Contenu--->
+            <!--Contact_des_établissement-->
+            <footer>
+                <div id="footer">
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(30, 0, 70);
+}
+#page {
+    margin-top: auto;
+    margin-left: auto;
+}
+header {
+    margin-top: auto;
+}
+#main {
+    margin: auto;
+}
+h1 {
+    color: magenta;
+    width: auto;
+    height: auto;
+}
+h1:hover {
+    transition: 0.5s;
+    color: rgb(30, 0, 70);
+    background: magenta;
+}

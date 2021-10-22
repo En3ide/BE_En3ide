@@ -1,0 +1,69 @@
+﻿<!doctype html>
+<html lang="fr">
+  <head>
+    <title> Page de test pour DOM </title>
+	<meta charset="UTF-8" />
+    <link href="style-dom.css" rel="stylesheet" type="text/css" media="screen"/>
+    <script src="manipDOM.js"></script> 
+    <script src="PixelArt.js" type="text/javascript"> </script>	
+
+  </head>
+  <body>
+
+	 <div class="consigne">
+		Manipulation de l'arbre DOM. Création de n&oelig;uds&nbsp;: insertion, ajout, suppression, remplacement.
+		<br/>
+		Pour l'insersion, la suppression et le remplacement il faut sélectionner une image puis choisissez une action sur l'un des boutons. 
+		<br/>
+		Les ajouts et remplacement se font avec des sources d'images aléatoirement choisies dans une liste préétablie.
+	</div>
+
+	<h1> Manipulation sur l'arbre DOM </h1>
+
+	<div id="buttons">
+		<span class="button" id="insertButton" title="insère une image avant celle sélectionnée">
+		Insert</span>
+		<span class="button" id="appendButton" title="ajoute une nouvelle image à la suite des autres">
+		Append</span>
+		<span class="button" id="removeButton" title="supprime l'image sélectionnée">
+		Remove</span>
+		<span class="button" id="replaceButton" title="remplace l'image sélectionnée par une autre (au hasard)">
+		Replace</span>
+		<span class="button" id="traitementButton" title="ouverture de la zone de traitement d'image">
+		Ouvrir traitement image</span>
+	</div>
+
+	<div id="images">
+		<img src="img/image1.jpg" alt="image 1"> 
+		<img src="img/image5.jpg" alt="image 2"> 
+	</div> 
+	
+	<!-- container regroupant l'ensemble des outils pour assurer le traitement des images-->
+	<div id="traitImg">
+		<div id="traitementImg" class="closeTraitement">
+		
+			<!-- élément permettant de charger une image dans le canvas "monCanvas" -->
+			<div id="select_File">
+			   <label for="file">Sélectionner le fichier image à traiter</label>
+			   <input type='file' id='fileinput'  accept="image/*" onchange='chargerVers1()'>
+			</div>
+			
+		    <!-- ensemble des boutons  -->
+			<ul id="menu">
+				<li class="button" id="chargerButton" title="charge l'image sélectionnée dans la zone de dessin">
+				Charger</li>
+				<li class="button" id="effacerButton" title="efface l'image dans les zones de dessin">
+				Effacer</li>
+				<li class="button" id="annuler_R_Button" title="supprime la composante rouge de l'image">
+				Annuler composante R</li>
+												
+			</ul>
+	<!-- container regroupant les canvas (zones graphiques) pour agir sur les images -->
+			<div id="contenu">
+				<canvas id="monCanvas" ></canvas>
+				<canvas id="monCanvasResultat" ></canvas>
+			</div>
+	    </div>
+	</div>
+  </body>
+</html>

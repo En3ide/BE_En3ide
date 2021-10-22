@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Exercice 3 JavaScript</title>
+        <link rel="stylesheet" href="../styles/style.css">
+        <script src="../script/script1.js"></script>
+    </head>
+    <body onLoad=alert("Bienvenue sur ma page !")>
+        <p>Je suis un document HTML.</p>
+
+        <h2>Créer Boîte Modale</h2>
+        <button class="example">Quitter la page</button>
+        <div class="modal">
+          <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Ceci est un Modal</h2>
+          </div>
+        </div>
+        <script>
+        var modal = document.querySelector(".modal");
+        var trigger = document.querySelector(".example");
+        var closeButton = document.querySelector(".close-button");
+        
+        function toggleModal() {
+            modal.classList.toggle("show-modal");
+        }
+        function windowOnClick(event) {
+            if (event.target === modal) {
+                toggleModal();
+            }
+        }
+        trigger.addEventListener("click", toggleModal);
+        closeButton.addEventListener("click", toggleModal);
+        window.addEventListener("click", windowOnClick);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Exercice 1 JavaScript</title>
+        <link rel="stylesheet" href="../styles/style.css">
+        <script src="../script/script1.js"></script>
+    </head>
+    <body>
+        <a href='#' onclick='example()'>Cliquez sur moi ^_^</a>
+        <div id="example">
+          <div>
+            <p>Vous venez de cliquer sur un lien !</p>
+            <a href='#' onclick='example()'>Cliquez ici pour fermer la boîte</a>
+          </div>
+          <script> 
+            function example() {
+            el = document.getElementById("example");
+            el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
+            }
+          </script>
+        </div>
+    </body>
+</html>
